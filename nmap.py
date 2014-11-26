@@ -12,8 +12,7 @@ def scan(option = 1):
     print "Please wait, scanning remote host: ", remoteServerIP
     print "-" * 60
 
-    # Using the range function to specify ports (here it will scans all ports between 1 and 1024)
-    # We also put in some error handling for catching errors
+    #scans all ports between 1 and 1024
     try:
         for port in range(1,1025):  
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -35,7 +34,6 @@ def scan(option = 1):
         print "Couldn't connect to server"
         sys.exit()
 
-    # Printing the information to screen
     print 'Scanning Completed'
 
 def save_output(output):
