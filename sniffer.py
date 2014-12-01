@@ -1,4 +1,6 @@
-import socket, sys
+#!/usr/bin/env python
+import socket
+import sys
 from struct import *
 def sniffer(option = 1):
     try:
